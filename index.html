@@ -1,0 +1,1779 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="vwZ3yK2z3tyKOUp0Hz5hKwMCkCmZ6V7Jsz2ywjMkqHE"
+    />
+
+    <!-- 1. Favicon (Ikon di tab browser & Google Search) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- 2. Foto Thumbnail Saat Link Dibagikan ke WhatsApp / Medsos -->
+    <meta
+      property="og:image"
+      content="https://bolenmodjo.com/assets/logo.png"
+    />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
+    <meta
+      name="twitter:image"
+      content="https://bolenmodjo.com/assets/logo.png"
+    />
+
+    <meta property="og:site_name" content="Bolen Modjo" />
+
+    <!-- Meta SEO Utama -->
+    <meta
+      name="description"
+      content="Bolen Modjo menyediakan aneka bolen pisang lumer, bolu panggang, pastry, dan paket snack box lezat di Kemlagi, Mojokerto."
+    />
+    <link rel="canonical" href="https://bolenmodjo.com/" />
+
+    <!-- Open Graph / Tampilan Share WhatsApp & Medsos -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bolenmodjo.com/" />
+    <meta
+      property="og:title"
+      content="Bolen Modjo - Bolen Pisang & Bakery Khas Modjo"
+    />
+    <meta
+      property="og:description"
+      content="Kelezatan Bolen Pisang Lumer & Bakery Khas Modjo. Nikmati aneka bolen, bolu, dan camilan nikmat dengan bahan premium."
+    />
+    <meta
+      property="og:image"
+      content="https://bolenmodjo.com/assets/logo.png"
+    />
+
+    <!-- 1. Skema Nama Situs (Wajib agar nama domain berganti jadi Bolen Modjo) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bolen Modjo",
+        "alternateName": ["Bolen Modjo Mojokerto", "BolenModjo"],
+        "url": "https://bolenmodjo.com/"
+      }
+    </script>
+
+    <!-- 2. Skema Profil Bisnis Bakery -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Bolen Modjo",
+        "image": "https://bolenmodjo.com/assets/logo.png",
+        "url": "https://bolenmodjo.com/",
+        "telephone": "+6285784567853",
+        "priceRange": "Rp 2.000 - Rp 50.000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kedungrejo, Mojokusumo",
+          "addressLocality": "Kemlagi",
+          "addressRegion": "Mojokerto, Jawa Timur",
+          "postalCode": "61353",
+          "addressCountry": "ID"
+        },
+        "servesCuisine": "Indonesian Pastry & Bakery"
+      }
+    </script>
+
+    <title>Bolen Modjo - Bolen Pisang & Bakery Khas Modjo</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Color Extensions -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              modjo: {
+                red: "#8C1518" /* Warna Merah Dus Modjo */,
+                darkred: "#630D10" /* Warna Merah Tua Hover */,
+                lightred: "#FDF2F2" /* Background Tint Merah Lembut */,
+                gold: "#D99B26" /* Warna Emas Logo & Topping */,
+                cream: "#FAFAF7" /* Warna Background Warm Cream */,
+                dark: "#2A1810" /* Warna Teks Chocolate Dark */,
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-modjo-cream text-modjo-dark font-sans">
+    <!-- 1. HEADER / NAVBAR -->
+    <nav
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-modjo-gold/20"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo Brand -->
+        <a href="#" class="flex flex-col items-center justify-center mt-1">
+          <!-- Bagian atas: Tulisan Modjo dengan ornamen -->
+          <div class="flex items-center gap-1.5">
+            <!-- Ornamen daun terbalik mirip ukiran pada kemasan -->
+            <i
+              class="fa-solid fa-leaf text-modjo-gold text-[10px] mb-3 transform -scale-x-100 opacity-80"
+            ></i>
+            <span
+              class="text-3xl text-modjo-gold"
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-weight: 700;
+                font-style: italic;
+                letter-spacing: 0.02em;
+                line-height: 1;
+              "
+            >
+              Modjo
+            </span>
+          </div>
+
+          <!-- Bagian bawah: Sub-teks yang disusun bertumpuk seperti pada kemasan box -->
+          <div class="flex flex-col items-center mt-[-2px]">
+            <div
+              class="flex items-center gap-1 text-[8px] uppercase tracking-[0.25em] font-black text-modjo-dark"
+            >
+              <i class="fa-solid fa-diamond text-[4px] text-modjo-gold"></i>
+              <span>Bolen Pisang</span>
+              <i class="fa-solid fa-diamond text-[4px] text-modjo-gold"></i>
+            </div>
+            <span
+              class="text-[7px] uppercase tracking-widest font-bold text-modjo-dark mt-0.5"
+            >
+              & Bakery
+            </span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <div
+          class="hidden md:flex space-x-6 text-sm font-semibold text-slate-700"
+        >
+          <a
+            href="#beranda"
+            class="inline-block transition-all transform hover:scale-110 hover:text-modjo-red duration-200"
+          >
+            Beranda
+          </a>
+          <a
+            href="#katalog"
+            class="inline-block transition-all transform hover:scale-110 hover:text-modjo-red duration-200"
+          >
+            Katalog Kue
+          </a>
+          <a
+            href="#grosir"
+            class="inline-block transition-all transform hover:scale-110 hover:text-modjo-red duration-200"
+          >
+            Pemesanan Besar
+          </a>
+          <a
+            href="#tentang"
+            class="inline-block transition-all transform hover:scale-110 hover:text-modjo-red duration-200"
+          >
+            Tentang Kami
+          </a>
+          <a
+            href="#kontak"
+            class="inline-block transition-all transform hover:scale-110 hover:text-modjo-red duration-200"
+          >
+            Kontak
+          </a>
+        </div>
+
+        <!-- CTA WhatsApp Header -->
+        <a
+          href="https://wa.me/6285784567853?text=Halo%20Admin%20Kak,%20saya%20ingin%20pesan%20kue"
+          target="_blank"
+          class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-xs md:text-sm font-bold flex items-center gap-2 shadow-md transition transform hover:scale-105"
+        >
+          <i class="fa-brands fa-whatsapp text-base"></i> Pesan via WA
+        </a>
+      </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <!-- Bungkus utama dengan background gambar -->
+    <div
+      class="relative w-full min-h-[500px] md:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat"
+      style="background-image: url(&quot;assets/jumbotron.jpeg&quot;)"
+    >
+      <!-- Overlay gradasi hitam transparan dari kiri ke kanan agar teks putih lebih terbaca di atas kain -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"
+      ></div>
+
+      <!-- Konten Utama -->
+      <section
+        id="beranda"
+        class="relative z-10 w-full max-w-6xl mx-auto px-4 py-10 md:py-16"
+      >
+        <!-- Batasi lebar teks hanya setengah layar (max-w-xl) agar tidak menutupi gambar bolen di kanan -->
+        <div class="max-w-xl">
+          <!-- Badge
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 text-modjo-red text-xs font-bold rounded-full mb-4 shadow-md"
+          >
+            <i class="fa-solid fa-certificate text-modjo-gold"></i> Resep Asli &
+            Fresh From The Oven
+          </span> -->
+
+          <!-- Judul -->
+          <h1
+            class="text-4xl md:text-6xl font-black text-white drop-shadow-lg leading-tight mb-4"
+          >
+            Kelezatan Bakery & Bolen Khas
+            <span class="text-modjo-gold drop-shadow-md">Modjo</span>
+          </h1>
+
+          <!-- Deskripsi -->
+          <p
+            class="text-white/90 drop-shadow-md mb-8 text-sm md:text-base leading-relaxed font-medium"
+          >
+            Menghadirkan aneka olahan bolen, kue, bolu hingga snack yang dibuat
+            dengan bahan terbaik sehingga menghadirkan cita rasa yang otentik.
+            Tetap dengan harga yang ramah dikantong cocok untuk setiap momen
+            berharga anda.
+          </p>
+
+          <!-- Tombol Aksi -->
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="#katalog"
+              class="bg-modjo-red hover:bg-modjo-darkred text-white px-6 py-3 rounded-lg font-bold text-sm transition shadow-lg flex items-center gap-2"
+            >
+              <i class="fa-solid fa-store"></i> Lihat Katalog Kue
+            </a>
+            <a
+              href="#grosir"
+              class="bg-white hover:bg-amber-50 text-modjo-red px-6 py-3 rounded-lg font-bold text-sm transition shadow-lg flex items-center gap-2"
+            >
+              <i class="fa-solid fa-box text-modjo-gold"></i> Paket Snack Box /
+              Acara
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. KATALOG PRODUK -->
+    <section
+      id="katalog"
+      class="max-w-6xl mx-auto px-4 py-12 border-t border-modjo-gold/20"
+    >
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span
+          class="text-modjo-gold font-bold text-xs uppercase tracking-widest block"
+          >Pilihan Menu Terbaik</span
+        >
+        <h2 class="text-2xl md:text-3xl font-black text-modjo-red">
+          Katalog Kue Bolen Modjo
+        </h2>
+      </div>
+
+      <div class="mb-14">
+        <!-- Grid 2 Kolom dengan Card Horizontal (Gambar Kiri, Teks Kanan di layar besar) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Produk Andalan 1 -->
+          <div
+            data-aos="fade-up"
+            class="bg-white rounded-2xl shadow-lg border border-modjo-gold/40 overflow-hidden hover:shadow-xl transition group flex flex-col sm:flex-row"
+          >
+            <div
+              class="sm:w-2/5 h-48 sm:h-auto bg-slate-100 relative overflow-hidden"
+            >
+              <img
+                src="assets/coklat.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bolen Coklat Lumer"
+              />
+              <span
+                class="absolute top-3 left-3 bg-modjo-red text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow"
+              >
+                Signature ⭐</span
+              >
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-center">
+              <h3 class="font-black text-xl text-modjo-red mb-2">
+                Bolen Pisang Coklat
+              </h3>
+
+              <!-- Deskripsi fokus pada rasa -->
+              <p class="text-slate-500 text-xs leading-relaxed mb-4">
+                Varian yang memadukan pisang dan lelehan coklat di dalamnya
+                dengan topping misis dan keju di atasnya.
+              </p>
+
+              <!-- Blok Harga Kemasan (Baru) -->
+              <div class="flex flex-wrap gap-2 mb-5">
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 5</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 10.000</span
+                  >
+                </div>
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 10</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 20.000</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bagian Bawah (Harga Satuan & Tombol) -->
+              <div
+                class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between"
+              >
+                <div>
+                  <span
+                    class="text-[10px] text-slate-400 block uppercase font-bold"
+                    >Harga / Pcs</span
+                  >
+                  <span class="font-bold text-slate-600 text-sm">Rp 2.000</span>
+                </div>
+                <a
+                  href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolen%20Coklat"
+                  class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+                >
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produk Andalan 2 -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="bg-white rounded-2xl shadow-lg border border-modjo-gold/40 overflow-hidden hover:shadow-xl transition group flex flex-col sm:flex-row"
+          >
+            <div
+              class="sm:w-2/5 h-48 sm:h-auto bg-slate-100 relative overflow-hidden"
+            >
+              <img
+                src="assets/keju.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bolen Pisang Keju"
+              />
+              <span
+                class="absolute top-3 left-3 bg-modjo-red text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow"
+                >Signature ⭐</span
+              >
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-center">
+              <h3 class="font-black text-xl text-modjo-red mb-2">
+                Bolen Pisang Keju
+              </h3>
+
+              <!-- Deskripsi fokus pada rasa -->
+              <p class="text-slate-500 text-xs leading-relaxed mb-4">
+                Varian yang memadukan pisang dengan potongan keju di dalamnya
+                dengan topping keju di atasnya.
+              </p>
+
+              <!-- Blok Harga Kemasan (Baru) -->
+              <div class="flex flex-wrap gap-2 mb-5">
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 5</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 12.000</span
+                  >
+                </div>
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 10</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 22.000</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bagian Bawah (Harga Satuan & Tombol) -->
+              <div
+                class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between"
+              >
+                <div>
+                  <span
+                    class="text-[10px] text-slate-400 block uppercase font-bold"
+                    >Harga / Pcs</span
+                  >
+                  <span class="font-bold text-slate-600 text-sm">Rp 2.500</span>
+                </div>
+                <a
+                  href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolen%20Keju"
+                  class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+                >
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produk Andalan 3  -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="bg-white rounded-2xl shadow-lg border border-modjo-gold/40 overflow-hidden hover:shadow-xl transition group flex flex-col sm:flex-row"
+          >
+            <div
+              class="sm:w-2/5 h-48 sm:h-auto bg-slate-100 relative overflow-hidden"
+            >
+              <img
+                src="assets/mixx.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bolen Pisang Mix"
+              />
+              <span
+                class="absolute top-3 left-3 bg-modjo-red text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow"
+                >Signature ⭐</span
+              >
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-center">
+              <h3 class="font-black text-xl text-modjo-red mb-2">
+                Bolen Pisang Mix Coklat & Keju
+              </h3>
+
+              <!-- Deskripsi fokus pada rasa -->
+              <p class="text-slate-500 text-xs leading-relaxed mb-4">
+                Varian yang memadukan bolen variasi rasa coklat dan keju dalam
+                satu kemasan.
+              </p>
+
+              <!-- Blok Harga Kemasan (Baru) -->
+              <div class="flex flex-wrap gap-2 mb-5">
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 5</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 12.000</span
+                  >
+                </div>
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 10</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 22.000</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bagian Bawah (Harga Satuan & Tombol) -->
+              <div
+                class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between"
+              >
+                <div>
+                  <span
+                    class="text-[10px] text-slate-400 block uppercase font-bold"
+                    >Harga / Pcs</span
+                  >
+                  <span class="font-bold text-slate-600 text-sm">Rp 3.000</span>
+                </div>
+                <a
+                  href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolen%20Mix"
+                  class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+                >
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produk Andalan 4  -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="bg-white rounded-2xl shadow-lg border border-modjo-gold/40 overflow-hidden hover:shadow-xl transition group flex flex-col sm:flex-row"
+          >
+            <div
+              class="sm:w-2/5 h-48 sm:h-auto bg-slate-100 relative overflow-hidden"
+            >
+              <img
+                src="assets/bolenspesial.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bolen Pisang Spesial"
+              />
+              <span
+                class="absolute top-3 left-3 bg-modjo-red text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow"
+                >Signature ⭐</span
+              >
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-center">
+              <h3 class="font-black text-xl text-modjo-red mb-2">
+                Bolen Pisang Spesial
+              </h3>
+
+              <!-- Deskripsi fokus pada rasa -->
+              <p class="text-slate-500 text-xs leading-relaxed mb-4">
+                Perpaduan sempurna pisang manis pilihan dengan isian dobel
+                coklat lumer, disempurnakan dengan taburan topping keju parut
+                ekstra tebal dan taburan misis renyah di atasnya.
+              </p>
+
+              <!-- Blok Harga Kemasan (Baru) -->
+              <div class="flex flex-wrap gap-2 mb-5">
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 4</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 13.000</span
+                  >
+                </div>
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 8</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 25.000</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bagian Bawah (Harga Satuan & Tombol) -->
+              <div
+                class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between"
+              >
+                <div>
+                  <span
+                    class="text-[10px] text-slate-400 block uppercase font-bold"
+                  ></span>
+                  <span class="font-bold text-slate-600 text-sm"></span>
+                </div>
+                <a
+                  href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolen%20Special"
+                  class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+                >
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produk Andalan 5  -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="bg-white rounded-2xl shadow-lg border border-modjo-gold/40 overflow-hidden hover:shadow-xl transition group flex flex-col sm:flex-row"
+          >
+            <div
+              class="sm:w-2/5 h-48 sm:h-auto bg-slate-100 relative overflow-hidden"
+            >
+              <img
+                src="assets/bolentape.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bolen Tape"
+              />
+              <span
+                class="absolute top-3 left-3 bg-modjo-red text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow"
+                >Signature ⭐</span
+              >
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-center">
+              <h3 class="font-black text-xl text-modjo-red mb-2">Bolen Tape</h3>
+
+              <!-- Deskripsi fokus pada rasa -->
+              <p class="text-slate-500 text-xs leading-relaxed mb-4">
+                Inovasi rasa tradisional dengan olahan tape singkong legit
+                bertekstur lembut dan aroma manis khas, dibalut kulit pastry
+                renyah berlapis yang gurih.
+              </p>
+
+              <!-- Blok Harga Kemasan (Baru) -->
+              <div class="flex flex-wrap gap-2 mb-5">
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 5</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 12.000</span
+                  >
+                </div>
+                <div
+                  class="bg-modjo-lightred border border-modjo-red/20 px-3 py-1.5 rounded-lg flex-1 text-center sm:text-left"
+                >
+                  <span
+                    class="text-[10px] text-slate-500 font-bold uppercase block mb-0.5"
+                    >Kemasan Isi 10</span
+                  >
+                  <span class="font-black text-modjo-red text-sm"
+                    >Rp 22.000</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bagian Bawah (Harga Satuan & Tombol) -->
+              <div
+                class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between"
+              >
+                <div>
+                  <span
+                    class="text-[10px] text-slate-400 block uppercase font-bold"
+                  ></span>
+                  <span class="font-bold text-slate-600 text-sm"></span>
+                </div>
+                <a
+                  href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolen%20Tape"
+                  class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+                >
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garis Pemisah untuk produk lainnya -->
+      <div class="flex items-center gap-4 mb-8">
+        <div class="flex-grow h-px bg-modjo-gold/20"></div>
+        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest">
+          Varian & Aneka Kue Lainnya
+        </h3>
+        <div class="flex-grow h-px bg-modjo-gold/20"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Item 1 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/bananabread1.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Banana Bread"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Banana Bread</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Roti pisang lembut berbumbu spekoek tipis dengan aroma harum khas,
+              pas untuk teman kopi atau teh hangat.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 35.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Banana%20Bread"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/bolu1.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Bolu Panggang"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Bolu Panggang</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Bolu klasik dengan tekstur lembut, gurih, dan legit yang
+              dipanggang sempurna hingga berwarna keemasan.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 28.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolu%20Panggang"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/brownis1.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Brownis Panggang"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Brownis Panggang</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Brownis coklat kaya rasa (fudgy) dengan permukaan renyah di luar
+              dan tekstur lembut lumer di dalam.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >HARGA / DUS</span
+                >
+                <span class="font-black text-modjo-red text-lg"
+                  >Rp 35.000
+                </span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Brownis%20Panggang"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/lapis1.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Lapis Surabaya"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Lapis Surabaya</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Kue lapis lezat bertekstur sangat lembut dengan perpaduan lapisan
+              kuning dan coklat yang diikat selai manis.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 35.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Lapis%20Surabaya"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 5 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/rollcake1.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Roll Cake"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Roll Cake</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Bolu gulung lembut dengan isian krim manis dan aneka pilihan
+              topping yang memberikan sensasi lezat di setiap gigitan.
+            </p>
+
+            <div class="mt-3.5 pt-3 border-t border-slate-100">
+              <span
+                class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block mb-2"
+              >
+                Pilihan Varian Rasa:
+              </span>
+              <div class="flex flex-wrap gap-1.5">
+                <span
+                  class="bg-yellow-50 text-yellow-800 border border-yellow-200 text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex items-center gap-1"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-yellow-500"></span>
+                  Orginal
+                </span>
+                <span
+                  class="bg-rose-50 text-rose-800 border border-rose-200 text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex items-center gap-1"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Red
+                  Velvet
+                </span>
+                <span
+                  class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex items-center gap-1"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                  Pandan
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Pcs</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 10.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Roll%20Cake"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 6 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/marblecake1.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Marble Cake"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Marble Cake</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Kue marmer klasik berkulit renyah dengan motif coklat indah,
+              bertekstur lembut, dan beraroma mentega yang kuat.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 25.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Marble%20Cake"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 7 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/donut.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Mix Donut"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Mix Donut</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Donat empuk bertekstur sangat lembut dengan aneka pilihan topping
+              manis dan warna-warni yang memberikan sensasi lezat di setiap
+              gigitan.
+            </p>
+
+            <!-- Bagian Harga dan Tombol yang Dimodifikasi -->
+            <div class="mt-4 pt-4 border-t border-slate-100">
+              <!-- List Varian Harga -->
+              <div class="flex flex-col gap-2 mb-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-500 font-semibold"
+                    >Isi 4 Pcs</span
+                  >
+                  <span class="font-bold text-modjo-red text-sm"
+                    >Rp 10.000</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-500 font-semibold"
+                    >Isi 8 Pcs</span
+                  >
+                  <span class="font-bold text-modjo-red text-sm"
+                    >Rp 20.000</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-500 font-semibold"
+                    >Isi 12 Pcs</span
+                  >
+                  <span class="font-bold text-modjo-red text-sm"
+                    >Rp 30.000</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-500 font-semibold"
+                    >Hantaran Kecil</span
+                  >
+                  <span class="font-bold text-modjo-red text-sm"
+                    >Rp 35.000</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-500 font-semibold"
+                    >Hantaran Besar</span
+                  >
+                  <span class="font-bold text-modjo-red text-sm"
+                    >Rp 50.000</span
+                  >
+                </div>
+              </div>
+
+              <!-- Tombol dibuat full-width agar layout tetap rapi -->
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Mix%20Donut"
+                class="block w-full text-center bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2.5 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- item 8 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/rollabon1.jpg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Roll Abon"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Roll Abon</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Roti gulung bertekstur lembut dengan balutan abon gurih yang
+              berlimpah, disempurnakan dengan taburan wijen dan irisan daun
+              bawang yang memberikan sensasi lezat di setiap gigitan.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus ( 6 Pcs )</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 20.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Roll%20Abon"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 9 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/browniskukus.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Brownis Potong Ekonomis"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">
+              Brownis Potong Ekonomis
+            </h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Kue coklat lembut dengan cita rasa manis yang pas, tekstur padat
+              moist di setiap gigitan, serta taburan topping yang cocok untuk
+              teman santai bersama keluarga.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 12.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Brownis"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 10 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/banpandan.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Bolu Pandan"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Bolu Pandan</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Bolu panggang klasik beraroma pandan wangi yang khas, bertekstur
+              sangat empuk, lembut, dan ringan di lidah.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 8.500</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolu%20Pandan"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 11 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/banpisang.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Bolu Pisang"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Bolu Pisang</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Bolu lembut dengan aroma manis pisang alami yang harum menggugah
+              selera dan tekstur moist yang pas dinikmati kapan saja.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 7.500</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolu%20Pisang"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 12 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/bantape.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Bolu Tape"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Bolu Tape</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Bolu tradisional berbahan tape pilihan yang menghasilkan rasa
+              manis legit lembut dengan aroma khas yang memikat.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Dus</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 8.500</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bolu%20Tape"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 13 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/anekakue.jpg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Aneka Roti Manis"
+            />
+            <span
+              class="absolute top-3 left-3 bg-red-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Snack 🥐
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Aneka Roti Manis</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Pilihan roti bertekstur empuk dan berserat halus dengan aneka
+              variasi isian lezat seperti coklat, keju, hingga selai manis
+              segar.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Pcs</span
+                >
+                <span class="font-black text-modjo-red text-lg">
+                  Start From Rp 4.000</span
+                >
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Aneka%20Kue"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 14 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/bakpia.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Bakpia"
+            />
+            <span
+              class="absolute top-3 left-3 bg-red-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Snack 🥐
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Bakpia</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Kue pia panggang khas dengan kulit renyah berlapis tipis dan isian
+              lembut padat yang manis gurih.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Kemasan</span
+                >
+                <span class="font-black text-modjo-red text-lg"> Rp 7.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Bakpia"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 15 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/kuetart.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Kue Tart"
+            />
+            <span
+              class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Hemat Acara 📦
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Kue Tart</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Kue tart lembut dan cantik dengan dekorasi krim istimewa, dibuat
+              khusus untuk menyempurnakan momen perayaan dan hari spesial Anda.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Pcs</span
+                >
+                <span class="font-black text-modjo-red text-lg">
+                  Start From Rp 40.000</span
+                >
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Kue%20Tart"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 16 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-2xl shadow-md border border-modjo-gold/20 overflow-hidden hover:shadow-xl transition group"
+        >
+          <div class="h-48 bg-slate-100 relative overflow-hidden">
+            <img
+              src="assets/stick.jpeg"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              alt="Stick Bawang"
+            />
+            <span
+              class="absolute top-3 left-3 bg-red-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"
+            >
+              Snack 🥐
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-modjo-red">Stick Bawang</h3>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">
+              Camilan pastry renyah berbentuk stik yang gurih, garing, dan nagih
+              untuk teman ngemil harian.
+            </p>
+            <div
+              class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-slate-400 block uppercase font-bold"
+                  >Harga / Kemasan</span
+                >
+                <span class="font-black text-modjo-red text-lg">Rp 17.000</span>
+              </div>
+              <a
+                href="https://wa.me/6285784567853?text=Halo%20Admin,%20saya%20mau%20pesan%20Stick"
+                class="bg-modjo-red hover:bg-modjo-darkred text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm"
+              >
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PEMESANAN BESAR / GROSIR -->
+    <section
+      id="grosir"
+      class="bg-modjo-red text-white py-14 px-4 my-8 relative overflow-hidden"
+    >
+      <div
+        data-aos="zoom-in"
+        class="max-w-4xl mx-auto text-center relative z-10"
+      >
+        <span
+          class="bg-modjo-gold text-modjo-dark text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest"
+        >
+          Layanan Khusus Grosir & Event
+        </span>
+        <h2 class="text-2xl md:text-4xl font-black mt-3 mb-3 text-white">
+          Pesanan Partai Besar & Catering Snack Box
+        </h2>
+        <p
+          class="text-amber-100 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed"
+        >
+          Siap melayani kebutuhan konsumsi untuk acara kantor, pengajian,
+          pernikahan, dan ulang tahun. Kapasitas produksi ratusan box per hari
+          dengan jaminan rasa khas Modjo.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-left mb-8">
+          <!-- Card 1: Custom Kombinasi -->
+          <div
+            class="bg-modjo-darkred/60 p-5 rounded-xl border border-modjo-gold/30 backdrop-blur-sm"
+          >
+            <i
+              class="fa-solid fa-boxes-packing text-modjo-gold text-2xl mb-2"
+            ></i>
+            <h4 class="font-bold text-sm text-white">Bisa Custom Kombinasi</h4>
+            <p class="text-xs text-amber-100/80 mt-1">
+              Pilih sendiri varian isi bolen & kue pendamping sesuai anggaran
+              Anda.
+            </p>
+          </div>
+
+          <!-- Card 2: Fresh On Time -->
+          <div
+            class="bg-modjo-darkred/60 p-5 rounded-xl border border-modjo-gold/30 backdrop-blur-sm"
+          >
+            <i class="fa-solid fa-stopwatch text-modjo-gold text-2xl mb-2"></i>
+            <h4 class="font-bold text-sm text-white">Fresh On Time</h4>
+            <p class="text-xs text-amber-100/80 mt-1">
+              Kue dipanggang di hari H agar tiba dalam kondisi hangat dan wangi.
+            </p>
+          </div>
+
+          <!-- Card 3: Kualitas Premium (Penyesuaian Isi & Ikon) -->
+          <div
+            class="bg-modjo-darkred/60 p-5 rounded-xl border border-modjo-gold/30 backdrop-blur-sm"
+          >
+            <i class="fa-solid fa-award text-modjo-gold text-2xl mb-2"></i>
+            <h4 class="font-bold text-sm text-white">Kualitas Premium</h4>
+            <p class="text-xs text-amber-100/80 mt-1">
+              Dibuat dengan bahan baku pilihan berkualitas tinggi untuk menjaga
+              cita rasa dan tekstur sempurna di setiap gigitan.
+            </p>
+          </div>
+        </div>
+
+        <a
+          href="https://wa.me/6285784567853?text=Halo%20Admin%20Bolen%20Modjo,%20saya%20ingin%20konsultasi%20pesanan%20besar"
+          target="_blank"
+          class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-3.5 rounded-full transition shadow-xl text-sm transform hover:scale-105"
+        >
+          <i class="fa-brands fa-whatsapp text-xl"></i> Konsultasi Pesanan Besar
+          via WA
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. TENTANG KAMI -->
+    <section id="tentang" class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div data-aos="fade-right">
+          <span
+            class="text-modjo-gold font-bold text-xs uppercase tracking-widest block"
+            >Cerita Kami</span
+          >
+          <h2 class="text-2xl md:text-3xl font-black text-modjo-red mb-4">
+            Cita Rasa Otentik Bolen Modjo
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Bolen Modjo lahir dari kecintaan kami menyajikan hidangan bolen
+            berkualitas premium dengan resep turun-temurun. Kami memastikan
+            setiap gigitan menghadirkan perpaduan sempurna antara rasa gurih
+            margarin, manisnya pisang lokal pilihan, serta kelezatan keju dan
+            coklat.
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Dikemas rapi dalam kemasan dus merah khas Modjo, produk kami sangat
+            cocok dijadikan oleh-oleh, hadiah hantaran, maupun teman minum teh
+            di rumah.
+          </p>
+        </div>
+        <div
+          data-aos="fade-left"
+          class="max-w-sm mx-auto bg-modjo-lightred p-3 rounded-2xl border border-modjo-red/20 text-center flex flex-col items-center justify-center"
+        >
+          <!-- Foto Dus Modjo -->
+          <img
+            src="assets/kemasan1.jpeg"
+            alt="Kemasan Dus Eksklusif Bolen Modjo"
+            class="w-full max-w-sm h-auto object-cover rounded-xl shadow-md mb-4 hover:scale-105 transition duration-300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. KONTAK & LOKASI -->
+    <section
+      id="kontak"
+      class="max-w-6xl mx-auto px-4 py-12 border-t border-modjo-gold/20"
+    >
+      <!-- PERUBAHAN 1: Ubah items-start menjadi items-stretch -->
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <!-- KOLOM KIRI: Informasi Kontak -->
+        <!-- Saya tambahkan "flex flex-col justify-center" agar teks kontak berada di tengah secara vertikal jika petanya sangat tinggi -->
+        <div data-aos="fade-right" class="flex flex-col justify-center">
+          <span
+            class="text-modjo-gold font-bold text-xs uppercase tracking-widest block"
+            >Layanan Pelanggan</span
+          >
+          <h2 class="text-2xl font-black text-modjo-red mb-4">
+            Hubungi Dapur Modjo
+          </h2>
+          <p class="text-slate-600 text-sm mb-6">
+            Ingin langsung memesan atau ambil di lokasi? Silakan hubungi kami
+            atau kunjungi dapur utama kami:
+          </p>
+
+          <!-- Daftar Kontak (Termasuk Gojek & Shopee yang baru) -->
+          <div class="space-y-4 text-sm text-slate-700">
+            <!-- Lokasi -->
+            <div class="flex items-center gap-3.5">
+              <div
+                class="w-10 h-10 bg-modjo-lightred text-modjo-red rounded-full flex items-center justify-center font-bold"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="font-bold text-xs text-slate-400 uppercase">
+                  Dapur & Outlet Utama
+                </p>
+                <p class="font-semibold text-modjo-dark">
+                  Kedungrejo, Mojokusumo, Kec. Kemlagi
+                </p>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/6285784567853"
+              target="_blank"
+              class="flex items-center gap-3.5 group"
+            >
+              <div
+                class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center font-bold group-hover:bg-emerald-200 transition"
+              >
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </div>
+              <div>
+                <p class="font-bold text-xs text-slate-400 uppercase">
+                  WhatsApp Official
+                </p>
+                <p
+                  class="font-semibold text-modjo-dark group-hover:text-emerald-700 transition"
+                >
+                  +62857-8456-7853
+                </p>
+              </div>
+            </a>
+
+            <!-- GoFood -->
+            <!-- <a
+              href="URL_TOKO_GOFOOD_KAMU"
+              target="_blank"
+              class="flex items-center gap-3.5 group"
+            >
+              <div
+                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold group-hover:bg-green-200 transition"
+              >
+                <i class="fa-solid fa-motorcycle text-lg"></i>
+              </div>
+              <div>
+                <p class="font-bold text-xs text-slate-400 uppercase">
+                  GoFood (Gojek)
+                </p>
+                <p
+                  class="font-semibold text-modjo-dark group-hover:text-green-600 transition"
+                >
+                  Bolen Modjo (Klik untuk pesan)
+                </p>
+              </div>
+            </a> -->
+
+            <!-- ShopeeFood -->
+            <!-- <a
+              href="URL_TOKO_SHOPEE_KAMU"
+              target="_blank"
+              class="flex items-center gap-3.5 group"
+            >
+              <div
+                class="w-10 h-10 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center font-bold group-hover:bg-orange-200 transition"
+              >
+                <i class="fa-solid fa-bag-shopping text-lg"></i>
+              </div>
+              <div>
+                <p class="font-bold text-xs text-slate-400 uppercase">
+                  ShopeeFood
+                </p>
+                <p
+                  class="font-semibold text-modjo-dark group-hover:text-orange-500 transition"
+                >
+                  Bolen Modjo (Klik untuk pesan)
+                </p>
+              </div>
+            </a> -->
+
+            <!-- Jam Operasional -->
+            <div class="flex items-center gap-3.5">
+              <div
+                class="w-10 h-10 bg-modjo-lightred text-modjo-red rounded-full flex items-center justify-center font-bold"
+              >
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <p class="font-bold text-xs text-slate-400 uppercase">
+                  Jam Operasional
+                </p>
+                <p class="font-semibold text-modjo-dark">
+                  Setiap Hari: 07.00 - 21.00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Integration Placeholder -->
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          class="bg-white rounded-2xl overflow-hidden h-64 md:h-full min-h-[350px] border border-modjo-gold/20 shadow-md"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.45855884359!2d112.37454647471885!3d-7.414393073021414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78110009238cf3%3A0x16f283e1ce74e1c8!2sBolen%20Modjo!5e0!3m2!1sid!2sid!4v1787488862590!5m2!1sid!2sid"
+            class="w-full h-full min-h-[350px]"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer
+      class="bg-modjo-dark text-slate-300 text-xs py-8 border-t-4 border-modjo-gold"
+    >
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="flex items-center justify-center gap-2 mb-3">
+          <span class="text-lg font-black text-white"
+            >Bolen <span class="text-modjo-gold">Modjo</span></span
+          >
+        </div>
+        <p class="text-slate-400 mb-4">
+          Nikmati kehangatan bolen pisang lezat & bakery segar setiap hari.
+        </p>
+        <p class="text-slate-500">© 2026 Bolen Modjo. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a
+      href="https://wa.me/6285784567853"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:bg-emerald-600 transition z-50 transform hover:scale-110"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Inisialisasi AOS
+      AOS.init({
+        once: true, // Animasi hanya berjalan satu kali saat pertama kali di-scroll
+        duration: 800, // Durasi animasi (dalam milidetik)
+        offset: 100, // Jarak trigger animasi dari bawah layar
+      });
+    </script>
+  </body>
+</html>
